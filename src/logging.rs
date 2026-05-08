@@ -1,7 +1,16 @@
+/*
+ * TermTalk - Logging Module
+ * Version: 0.8
+ * Copyright (c) 2025-2026 Peter Leukanič
+ * Under MIT License
+ *
+ * Thread-safe file-based logging utilities
+ */
+
+use std::fs::File;
 use std::io::Write;
 use std::sync::Arc;
 use tokio::sync::Mutex;
-use std::fs::File;
 
 pub async fn log_message(log_file: &Arc<Mutex<File>>, message: &str) {
     let mut file = log_file.lock().await;

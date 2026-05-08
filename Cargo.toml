@@ -1,14 +1,19 @@
 [package]
 name = "termtalk"
-version = "0.1.0"
+version = "0.8.0"
 edition = "2021"
+authors = ["Peter Leukanič"]
+license = "MIT"
+description = "A terminal-based chat application with real-time messaging"
 
-# Define the server binary
+[lib]
+name = "termtalk"
+path = "src/lib.rs"
+
 [[bin]]
 name = "server"
 path = "src/server.rs"
 
-# Define the client binary
 [[bin]]
 name = "client"
 path = "src/client.rs"
@@ -21,3 +26,4 @@ tui = "0.19"
 chrono = "0.4.39"
 unicode-width = "0.1.10"
 strip-ansi-escapes = "0.1.1"
+
