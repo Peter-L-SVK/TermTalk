@@ -14,8 +14,10 @@ This repository contains a **terminal-based chat application** built in Rust, le
 Here is a screenshot of TermTalk in action (terminal used in the picture: [Terminator](https://gnome-terminator.org/)):
 
 ![TermTalk Chat Screenshot](scrshots/example.png)
-<br>
+   
 But you can use any terminal emulator.
+
+
 ---
 
 ## **Release Notes**
